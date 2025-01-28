@@ -14,7 +14,7 @@ dependencies = [
 ]
 
 [project.scripts]
-terminal-query = "terminal_query:main"
+terminal-query = "terminal_query.cli:main"
 
 [build-system]
 requires = ["hatchling"]

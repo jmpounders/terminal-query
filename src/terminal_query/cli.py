@@ -1,4 +1,5 @@
 import os
+import sys
 import click
 
 from terminal_query.llm.client import get_llm_client
@@ -34,13 +35,19 @@ def main(query: tuple):
         print(f'Please set one of the following environment variables: {list(llm_api_key_env_vars)}')
         return
 
+    prompt = ' '.join(query)
+
+    # If the input is not a TTY, read from stdin
+    if not sys.stdin.isatty():
+        prompt += '\n\n' + sys.stdin.read()
+
     # Start the chat session
     chat = start_streaming_chat(MODEL_NAME, get_llm_client(env_var))
 
     # Create the initial system and user messages
     messages = [
         SystemMessage('You are a helpful assistant.'),
-        UserMessage(' '.join(query))
+        UserMessage(' '.join(prompt))
     ]
 
     # Send the messages to the LLM and stream the response
@@ -50,4 +57,5 @@ def main(query: tuple):
     print()  # For a newline after the stream completes
 
 if __name__ == '__main__':
+    print('test')
     main()
