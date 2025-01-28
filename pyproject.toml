@@ -1,0 +1,21 @@
+[project]
+name = "terminal-query"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Justin Pounders", email = "jmpounders@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic>=0.45.2",
+    "click>=8.1.8",
+    "openai>=1.60.2",
+]
+
+[project.scripts]
+terminal-query = "terminal_query:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
