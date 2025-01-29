@@ -1,7 +1,7 @@
 [project]
 name = "terminal-query"
 version = "0.1.0"
-description = "Add your description here"
+description = "Terminal Query is a powerful CLI tool that allows you to send queries to a Language Model (LLM) directly from your terminal. It captures your terminal input, integrates with `tmux` panes if available, and provides intelligent responses using your preferred LLM."
 readme = "README.md"
 authors = [
     { name = "Justin Pounders", email = "jmpounders@gmail.com" }
