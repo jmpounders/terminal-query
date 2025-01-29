@@ -30,8 +30,6 @@ You can install Terminal Query using `pipx`, which allows you to install and run
    pipx install terminal-query
    ```
 
-   *Replace `terminal-query` with the actual package name if different.*
-
 ## Usage
 
 Once installed, you can use Terminal Query by simply invoking the command followed by your query.
@@ -101,11 +99,3 @@ Ensure these environment variables are set in your shell. You can add them to yo
 export QMODEL='gpt-4o'
 export OPENAI_API_KEY='your-openai-api-key'
 ```
-
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request for any features, bugs, or improvements.
-
-## License
-
-[MIT License](LICENSE)
