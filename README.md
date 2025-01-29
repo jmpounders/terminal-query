@@ -2,7 +2,7 @@
 
 Terminal Query is a powerful CLI tool that allows you to send queries to a Language Model (LLM) directly from your terminal. It captures your terminal input, integrates with `tmux` panes if available, and provides intelligent responses using your preferred LLM.
 
-> This project is heavily influenced by [`shell_sage`]([text](https://github.com/AnswerDotAI/shell_sage)). This version is a bit leaner (fewer dependencies) and written in a style closer to what I prefer.
+> This project is heavily influenced by [`shell_sage`](https://github.com/AnswerDotAI/shell_sage). This version is a bit leaner (fewer dependencies) and written in a style closer to what I prefer.
 
 ## Installation
 
