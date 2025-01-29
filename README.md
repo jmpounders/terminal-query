@@ -2,6 +2,8 @@
 
 Terminal Query is a powerful CLI tool that allows you to send queries to a Language Model (LLM) directly from your terminal. It captures your terminal input, integrates with `tmux` panes if available, and provides intelligent responses using your preferred LLM.
 
+> This project is heavily influenced by [`shell_sage`]([text](https://github.com/AnswerDotAI/shell_sage)). This version is a bit leaner (fewer dependencies) and written in a style closer to what I prefer.
+
 ## Installation
 
 You can install Terminal Query using `pipx`, which allows you to install and run Python applications in isolated environments.
@@ -51,7 +53,7 @@ terminal-query "Your question here"
 2. **Pipe input from another command:**
 
    ```bash
-   echo "List all Python packages" | terminal-query
+   ls -l | terminal-query "Explain these files."
    ```
 
 3. **Use with `tmux`:**
