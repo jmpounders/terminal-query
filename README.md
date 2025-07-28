@@ -24,11 +24,13 @@ You can install Terminal Query using `pipx`, which allows you to install and run
 
    After running the above commands, you may need to restart your terminal or run `source ~/.bashrc` (or the equivalent for your shell) to ensure `pipx` is available.
 
-2. **Install Terminal Query with `pipx`**:
+3. **Install Terminal Query with `pipx`**:
 
    ```bash
-   pipx install terminal-query
+   pipx install ./terminal-query/
    ```
+
+Make sure to use the dots and slashes so that `pipx` knows that is a local package. Otherwise goes straight to PyPI then throws an ambiguous error when it doesn't find the package.
 
 ## Usage
 
